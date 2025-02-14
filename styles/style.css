@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffcccb;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #d50000;
+    font-size: 3em;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.fixed-button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.moving-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    transition: all 0.1s ease;
+    border-radius: 5px;
+}
+
+.moving-button:hover {
+    transform: translate(calc(100px * (0.5 - random())), calc(100px * (0.5 - random())));
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.si-button, .moving-button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.si-button {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
